@@ -1,4 +1,3 @@
-use crate::error::EngineError;
 use crate::state::Event;
 use borsh::{BorshDeserialize, BorshSerialize};
 use solana_program::program_error::ProgramError;
@@ -48,7 +47,7 @@ impl Event {
         let mut data = Vec::with_capacity(128);
         dummy
             .serialize(&mut data)
-            .map_err(|_| EngineError::InvalidAccountData)?;
+            .map_err(|_| ProgramError::InvalidAccountData)?;
         Ok(data.len())
     }
 }

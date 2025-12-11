@@ -11,7 +11,7 @@ pub mod utils;
 
 use solana_program::pubkey::Pubkey;
 
-solana_program::declare_id!("MatchEng1111111111111111111111111111111111");
+solana_program::declare_id!("11111111111111111111111111111111");
 
 /// Returns the program id used by the matching engine.
 pub fn program_id() -> Pubkey {

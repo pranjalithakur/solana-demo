@@ -1,0 +1,15 @@
+[package]
+name = "matching_engine"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "matching_engine"
+crate-type = ["cdylib", "lib"]
+
+[dependencies]
+solana-program = "1.18.26"
+borsh = { version = "1.5", features = ["derive"] }
+thiserror = "1.0"
+bytemuck = { version = "1.16", features = ["derive"] }
+num-traits = "0.2"

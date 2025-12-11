@@ -1,0 +1,20 @@
+# Build artifacts
+target/
+dist/
+
+# Node / npm
+node_modules/
+package-lock.json
+yarn.lock
+
+# IDE / editor
+.idea/
+.vscode/
+*.swp
+
+# Local environment
+.DS_Store
+.env
+
+# Local notes (not for version control)
+vuln.md
